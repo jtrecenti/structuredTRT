@@ -56,6 +56,7 @@ gabarito_amostra$gratuidade_pedida[1]
 # parece que não teve pedido de intervalo intrajornarda, mas foi concedido.
 # a jornada foi fixada direto
 
+gabarito_amostra$id_processo[2]
 gabarito_amostra$pedidos[[2]]
 gabarito_amostra$valor_condenacao[2]
 gabarito_amostra$custas[2]
@@ -395,6 +396,23 @@ gabarito_amostra$gratuidade_concedida[20]
 gabarito_amostra$gratuidade_pedida[20]
 gabarito_amostra$julgamento_final[20]
 
+# processo 21
+
+gabarito_amostra$id_processo[21]
+gabarito_amostra$pedidos[[21]]
+
+gabarito_amostra$pedidos[[21]]$categoria[1] <- "outro"
+# não foi justa_causa, está ruim essa classificação que a IA fez
+
+gabarito_amostra$pedidos[[21]]$categoria[2] <- "outro"
+# o pagamento não está sendo feito a título de rescição
+
+gabarito_amostra$valor_condenacao[21]
+gabarito_amostra$custas[21]
+gabarito_amostra$percentual_sucumbencia[21]
+gabarito_amostra$gratuidade_concedida[21]
+gabarito_amostra$gratuidade_pedida[21]
+gabarito_amostra$julgamento_final[21]
 
 # salvando dados manuais --------------------------------------------------
 
